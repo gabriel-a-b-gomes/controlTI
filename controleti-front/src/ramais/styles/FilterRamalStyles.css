@@ -1,0 +1,70 @@
+.filter-extra-container.ramal .filter-fields {
+    grid-template-columns: 120px 100px 120px 120px 200px auto;
+}
+
+.filter-extra-container.ramal .filter-buttons button.filter {
+    background: #F2921D;
+}
+
+@media (max-width: 1250px) {
+    .filter-extra-container.ramal {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.ramal .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.ramal .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+/* @media (max-width: 1290px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+
+    
+} */
+
+@media (max-width: 1200px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .filter-extra-container.ramal .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .filter-extra-container.ramal .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}

@@ -1,0 +1,65 @@
+.array-field-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.array-field-container .array-field {
+    list-style: none;
+    width: 100%;
+
+    display: grid;
+    gap: 10px;
+    padding: 0;
+}
+
+.array-field-container .array-field .array-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.array-field-container .array-field .array-item .array-item-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px 4px;
+    border-radius: 3px;
+
+    height: 30px;
+
+    background: #FFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    color: #942121;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.array-field-container .array-field .array-item .array-item-remove:hover {
+    background: rgba(245, 219, 219, 0.4);
+}
+
+.array-field-container .array-include-item {
+    height: 35px;
+
+    color: #ffffff;
+    font-weight: bold;
+    
+    padding: 0 10px;
+    border-radius: 5px;
+
+    background: #9778bf;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.array-field-container .array-include-item:hover {
+    background: #755d94;
+}

@@ -1,0 +1,44 @@
+.form-preventives {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+
+    margin-right: 5%;
+}
+
+.form-preventives button[type="submit"] {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background: #885AC3;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
+    height: 30px;
+}
+
+@media (max-width: 1300px) {
+    .form-preventives {
+        margin: 0;
+    }
+    .form-preventives, 
+    .form-preventives .text-box-container, 
+    .form-preventives .date-field-container,
+    .form-preventives button[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .form-preventives {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+}

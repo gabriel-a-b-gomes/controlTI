@@ -1,0 +1,81 @@
+.box-container.vpn .box-main {
+    border-color: #b1250e;
+}
+
+.box-container.vpn .box-main .box-area {
+    grid-template-columns: 30% 25% 45%;
+}
+
+.box-container.vpn .box-main .box-area .box-all-general-info {
+    grid-template-columns: 50% 50%;
+}
+
+.box-container.vpn .box-main .indicator.enable {
+    background: #b1250e;
+}
+
+.box-container.vpn .box-main .indicator.disable {
+    background: #000;
+}
+
+@media (max-width: 1140px) {
+    .box-container.vpn .box-main {
+        height: 100px;
+    }
+
+    .box-container.vpn .box-main .box-area .title {
+        grid-area: title;
+    }
+
+    .box-container.vpn .box-main .box-area .box-column {
+        grid-area: bcolumn;
+    }
+
+    .box-container.vpn .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general;
+    }
+
+    .box-container.vpn .box-main .box-area {
+        grid-template-columns: auto 40%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title bcolumn"
+            "general general";
+    }
+}
+
+@media (max-width: 750px) {
+    .box-container.vpn .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+}
+
+@media (max-width: 670px) {
+    .box-container.vpn .box-main {
+        height: 150px;
+    }
+
+    .box-container.vpn .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .box-container.vpn .box-main {
+        height: 200px;
+    }
+    
+    .box-container.vpn .box-main .box-area {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title"
+            "bcolumn"
+            "general";
+    }
+}

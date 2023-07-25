@@ -1,0 +1,49 @@
+.select-device-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 30px 50px;
+
+    background: rgba(248, 246, 246, 0.3);
+}
+
+.select-device-area h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.devices-cards {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .device-create-container {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .select-device-area h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .device-create-container {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .select-device-area h1 {
+        font-size: 24px;
+    }
+}

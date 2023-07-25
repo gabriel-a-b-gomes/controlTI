@@ -1,0 +1,24 @@
+.form-department {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto;
+}
+
+.form-department .fields-area {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    margin-bottom: 30px;
+}
+
+.form-department .fields-area .text-box-container {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .form-department .fields-area {
+        grid-template-columns: auto;
+    }
+}

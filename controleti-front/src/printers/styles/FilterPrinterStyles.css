@@ -1,0 +1,62 @@
+.filter-extra-container.printer .filter-fields {
+    grid-template-columns: 120px 100px auto auto auto auto;
+}
+
+.filter-extra-container.printer .filter-buttons button.filter {
+    background: #2980b9;
+}
+
+@media (max-width: 1330px) {
+    .filter-extra-container.printer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.printer .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.printer .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1130px) {
+    .filter-extra-container.printer .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .filter-extra-container.printer .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .filter-extra-container.printer .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .filter-extra-container.printer .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 525px) {
+    .filter-extra-container.printer .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .filter-extra-container.printer .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}

@@ -1,0 +1,102 @@
+.form-vm-host .form-vm-header-fields {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-vm-host .form-vm-header-fields .text-box-container, .form-vm-host .form-vm-header-fields .select-container {
+    width: 100%;
+}
+
+.form-vm-host .form-vm-boxes {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.form-vm-host .form-vm-details-fields {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-vm-host .form-vm-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-vm-host .form-vm-fields.three {
+    grid-template-columns: auto auto auto;
+}
+
+.form-vm-host .form-vm-fields.funcs {
+    width: 30%;
+}
+
+.form-vm-host .array-multi-select-container .drop-multi-select-down .array-multi-selected .selected-option {
+    background: #918CB0;
+}
+
+.form-vm-host  .array-multi-select-container .multi-label button {
+    background: #918CB0;
+}
+.form-vm-host .array-multi-select-container .multi-label button:hover {
+    background: #827ca9;
+}
+
+@media (max-width: 1300px) {
+    .form-vm-host .form-box.side-side {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .form-vm-host .form-box.side-side .form-vm-fields {
+        width: 100%;
+    }
+
+    .form-vm-host .form-box.side-side .form-vm-fields.three .text-box-container {
+        width: 100%;
+    }
+
+    .form-vm-host .form-box.side-side .form-vm-fields.funcs {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-vm-host .form-box.side-side .form-vm-fields.three {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-vm-host .form-vm-header-fields {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .form-vm-host .form-vm-header-fields .text-box-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-vm-host .form-vm-details-fields {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-vm-host .form-vm-details-fields .form-vm-fields,
+    .form-vm-host .form-vm-details-fields .form-vm-fields .date-field-container {
+        width: 100%;
+    }
+}

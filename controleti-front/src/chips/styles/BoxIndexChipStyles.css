@@ -1,0 +1,114 @@
+.box-container.chip .box-main {
+    border-color: #582698;
+}
+
+.box-container.chip .box-main .box-area {
+    grid-template-columns: 35% 27% 35% 3%;
+}
+
+.box-container.chip .box-main .box-area .box-all-general-info {
+    grid-template-columns: 50% 50%;
+}
+
+.box-container.chip .box-info span button {
+    background: none;
+    border: none;
+
+    padding-left: 0;
+}
+
+.box-container.chip .box-details {
+    background: #8948de;
+    color: #FFF;
+
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box-container.chip .box-main .indicator.enable {
+    background: #582698;
+}
+
+.box-container.chip .box-main .indicator.disable {
+    background: #000;
+}
+
+@media (max-width: 1000px) {
+    .box-container.chip .box-main {
+        height: 100px;
+    }
+
+    .box-container.chip .box-area .title {
+        grid-area: title;
+    }
+
+    .box-container.chip .box-area .box-column {
+        grid-area: bcolumn;
+    }
+
+    .box-container.chip .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general;
+    }
+
+    .box-container.chip .expand {
+        grid-area: expand;
+    }
+
+    .box-container.chip .box-main .box-area {
+        grid-template-columns: auto 47% 3%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title bcolumn expand"
+            "general general general";
+    }
+}
+
+@media (max-width: 900px) {
+    .box-container.chip .box-details {
+        grid-template-columns: 50% 50%;
+        padding: 5px 20px;
+    }
+
+    .box-container.chip .box-details .box-topic {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 750px) {
+    .box-container.chip .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+
+    .box-container.chip .box-main .box-area {
+        grid-template-columns: auto 54% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title title expand"
+            "bcolumn bcolumn bcolumn"
+            "general general general";
+    }
+
+    .box-container.chip .box-main {
+        height: 150px;
+    }
+}
+
+@media (max-width: 670px) {
+    .box-container.chip .box-main {
+        height: 200px;
+    }
+
+    .box-container.chip .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    .box-container.chip .box-details {
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+.config
+.vs
+controleti-front/.env*
+
+controleti-front/package-lock.json
+ControleTiAPI/appsettings*
+ControleTiAPI/Properties/

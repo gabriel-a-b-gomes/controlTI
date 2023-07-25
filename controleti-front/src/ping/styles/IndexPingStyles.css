@@ -1,0 +1,164 @@
+.index-container.pings {
+    margin-top: 0;
+}
+
+.index-container.pings .index-header {
+    margin-bottom: 20px;
+}
+
+.index-pings-title {
+    font-size: 20px;
+    font-weight: bold;
+
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+.index-pings-title .indicator {
+    height: 35px;
+    background: #885AC3;
+    width: 10px;
+
+    border-radius: 3px;
+
+    position: absolute;
+    z-index: -10;
+}
+
+.index-pings-title.computer .indicator {
+    background: #BD9E3E;
+}
+
+.index-pings-title button {
+    border: none;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-pings-title span {
+    z-index: 10000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.index-container.pings .choose-order-option {
+    display: flex; 
+    gap: 40px;
+    height: 35px !important;
+
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 20px;
+    border-radius: 3px;
+    background: #FFF;
+    border: 2px solid #9e8787;
+}
+
+.index-container.pings .choose-order-option span:not(.info) {
+    margin-bottom: 2px !important;
+}
+
+.index-container.pings .choose-order-option .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+}
+
+.order-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order-options {
+    margin-top: 10px !important;
+    z-index: 100000 !important;
+
+    border-radius: 0 0 3px 3px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.01);
+    padding: 0;
+}
+
+.order-options li {
+    padding: 5px 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.order-options li.active {
+    background: #A54242;
+    color: #FFF;
+}
+
+.order-options li:hover:not(li.active) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 
+Doc Flashing - Activity Indicator
+
+*/
+
+.dots {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
+
+    margin-left: 20px;
+}
+
+.dot-flashing {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+.dot-flashing:first-child {
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing:last-child {
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+  
+  @keyframes dot-flashing {
+    0% {
+      background-color: initial;
+    }
+    50%, 100% {
+      background-color: rgba(152, 128, 255, 0.2);
+    }
+  }
+
+@media (max-width: 640px) {
+    .index-container.pings .index-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .index-container.pings .index-header .order-area {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

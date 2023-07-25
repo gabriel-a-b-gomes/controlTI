@@ -1,0 +1,79 @@
+.select-form-device.chip {
+    border: 2px solid #A61F69;
+    color: #A61F69
+}
+
+.select-form-device.computer {
+    border: 2px solid #F2CD5C;
+    color: #F2CD5C
+}
+
+.select-form-device.ramal {
+    border: 2px solid #F2921D;
+    color: #F2921D
+}
+
+.select-form-device.nobreak {
+    border: 2px solid #ff3f34;
+    color: #ff3f34
+}
+
+.select-form-device.dvr {
+    border: 2px solid #2c3e50;
+    color: #2c3e50
+}
+
+.select-form-device.printer {
+    border: 2px solid #2980b9;
+    color: #2980b9
+}
+
+.select-form-device.router {
+    border: 2px solid #F09B1A;
+    color: #F09B1A
+}
+
+.select-form-device.switch {
+    border: 2px solid #D71E28;
+    color: #D71E28;
+}
+
+.select-form-device.node {
+    border: 2px solid #82CD47;
+    color: #82CD47;
+}
+
+.select-form-device.srv-host {
+    border: 2px solid #7770A1;
+    color: #7770A1;
+}
+
+.select-form-device.srv-vms {
+    border: 2px solid #918CB0;
+    color: #918CB0;
+}
+
+.select-form-device {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.02);
+    border: none;
+    padding: 5px 15px;
+
+    background: #FFF;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+
+    border-radius: 4px;
+}
+
+.select-form-device .dropdown-toggle {
+    margin-left: 60px;
+}
+
+.dropdevice {
+    margin-top: 5px !important;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01);
+
+    width: 200px;
+}
+

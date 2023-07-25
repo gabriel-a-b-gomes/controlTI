@@ -1,0 +1,173 @@
+.box-container {
+    width: 100%;
+    padding: 0;
+
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0 , 0, 0, 0.1);
+}
+
+.box-container.disable .box-area, .box-container.disable .box-details {
+    opacity: 0.8;
+}
+
+.box-main {
+    width: 100%;
+
+    background: #FFFFFF;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: #dfbc54;
+    border-radius: 3px 3px 0 0;
+
+    display: flex;
+    height: 50px;
+}
+
+.box-main .box-area {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 25% 20% 52% 3%;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.box-main .box-area .box-indicator {
+    width: 120px;
+}
+
+.box-main .box-area .title .indicator, ul.list-index li .indicator {
+    margin-left: 15px;
+
+    width: 30px;
+    font-size: 12px;
+
+    border-radius: 3px;
+    background: #6839A4;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px;
+    z-index: 1000;
+}
+
+
+.box-main .box-area .title {
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.box-main .box-area .box-column {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.box-main .box-area .box-column span {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.box-main .box-area .box-column span:last-child {
+    font-weight: 400;
+}
+
+.box-main .box-area .box-all-general-info {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.box-main .box-area .box-all-general-info .box-info {
+    height: 100%;
+    display: grid;
+    align-items: center;
+
+    padding-right: 10px;
+}
+
+.box-main .box-area .box-all-general-info .box-info label {
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.box-main .box-area .box-all-general-info .box-info span {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.box-main .box-area .box-all-general-info .box-info span.clip-with-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-main .box-buttons {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 120px;
+    box-shadow: -2px 0 2px rgba(0, 0, 0, 0.05);
+    background: rgba(253, 245, 245, 0.65);
+}
+
+.box-main .expand {
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.box-main .expand.up {
+    transform: rotate(-180deg);
+    margin-bottom: -10px;
+    transition: 0.8s;
+}
+
+.box-main .expand.down {
+    transform-origin: initial;
+    transition: 0.8s;
+}
+
+.box-details {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    padding: 5px;
+
+    background: rgb(243, 226, 174);
+
+    border-radius: 0 0 5px 5px;
+}
+
+.box-details .box-topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-details .box-topic label {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.box-details .box-topic span {
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 11px;
+}

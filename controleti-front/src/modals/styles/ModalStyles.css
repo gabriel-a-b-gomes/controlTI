@@ -1,0 +1,76 @@
+.close-modal {
+    border-radius: 3px;
+    border: none;
+    background: #FF5959;
+
+    height: 34px;
+    padding: 0 30px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modal-options, .modal-crud, .modal-history, .modal-report {
+    border-radius: 5px;
+}
+
+.modal-options-header {
+    padding-left: 20px;
+}
+
+.modal-options-header .modal-options-title {
+    border-left: 3px solid #A61F69;
+
+    padding-left: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.modal-history-header {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-history-header .modal-history-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-history-body {
+    padding: 0;
+
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.modal-crud-header {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 28px;
+
+    border-bottom: 2px solid #C1A6E3;
+    box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.01);
+}
+
+.modal-crud-header .modal-crud-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.modal-report-header {
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.01);
+}
+.modal-report-title {
+    font-weight: bold;
+}

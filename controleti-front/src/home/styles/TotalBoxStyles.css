@@ -1,0 +1,43 @@
+.total-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    grid-area: totals;
+}
+
+.total-box-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+    border-radius: 3px;
+    border-left: 3px solid;
+}
+
+.total-box-container:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.009);
+}
+
+.total-box-container .total-box-title {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.total-box-container .total-box-count {
+    font-weight: 700;
+}
+
+.total-box-container .total-box-count span {
+    font-weight: 500;
+    font-size: 12px;
+}

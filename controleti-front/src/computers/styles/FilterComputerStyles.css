@@ -1,0 +1,86 @@
+.filter-extra-container.computer .filter-fields {
+    grid-template-columns: 100px 80px 80px 100px 100px auto auto auto;
+
+    align-items: center;
+}
+
+.filter-extra-container.computer .filter-fields .field-from-to .text-box-container {
+    width: 70px;
+}
+
+.filter-extra-container.computer .filter-fields .field-from-to .date-field-container {
+    width: 108px;
+}
+
+.filter-extra-container.computer .filter-buttons button.filter {
+    background: #dfbc54;
+}
+
+@media (max-width: 1390px) {
+    .filter-extra-container.computer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.computer .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.computer .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1290px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+
+    
+}
+
+@media (max-width: 1200px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 940px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .filter-extra-container.computer .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .filter-extra-container.computer .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}

@@ -1,0 +1,122 @@
+.form-header-fields {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    width: 100%;
+}
+
+.form-middle-boxes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+}
+
+.form-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-fields.two {
+    grid-template-columns: auto auto;
+}
+
+.form-fields.three {
+    grid-template-columns: auto auto auto;
+}
+
+.date-field-area {
+    width: 200px;
+}
+
+@media (max-width: 1350px) {
+    .form-middle-boxes {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-middle-boxes .text-box-container {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .form-middle-boxes .form-box.half {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .form-middle-boxes .form-fields {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-fields-sideside {
+        flex-direction: column;
+    }
+
+    .form-fields-sideside .form-fields {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-box .text-box-container, .form-fields-sideside .date-field-area {
+        width: 100%;
+    }
+}
+
+@media (max-width: 790px) {
+    .form-header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .form-header h1 {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+
+    .form-header-fields {
+        flex-direction: column;
+    }
+
+    .form-header-fields .text-box-container.code, .form-header-fields .text-box-container.location {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form.dropdown {
+        width: 100%;
+    }
+
+    .form.dropdown .select {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdevice {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-fields-sideside .form-fields {
+        grid-template-columns: auto;
+    }
+} 
+
+@media (max-width: 600px) {
+    .form-middle-boxes .form-fields {
+        grid-template-columns: auto;
+        margin-bottom: 10px;
+    }
+}

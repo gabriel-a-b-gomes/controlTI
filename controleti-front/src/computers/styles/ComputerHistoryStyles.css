@@ -1,0 +1,21 @@
+.table.chistory {
+    margin-bottom: 0;
+
+    border-top-color: #BD9E3E;
+}
+
+.table.chistory tr td:first-child {
+    text-align: center;
+}
+
+.table.chistory tr.history.disable {
+    border-right: 10px solid rgba(0, 0, 0, 1);
+}
+
+.table.chistory tr.history.good {
+    border-right: 10px solid rgba(14, 192, 53, 1);
+}
+
+.table.chistory tr.history.issues {
+    border-right: 10px solid rgba(220, 39, 39, 1);
+}

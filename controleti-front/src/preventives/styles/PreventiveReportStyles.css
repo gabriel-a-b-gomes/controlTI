@@ -1,0 +1,227 @@
+div.page-footer {
+    text-align: center;
+    height: 50px;
+    font-size: 10px;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+div.page-footer p {
+    margin: 0;
+}
+
+table.report-container {
+    page-break-after: always;
+    width: 100%;
+}
+
+div.header-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #744AAA;
+    color: #FFF;
+
+    padding: 50px 20px;
+
+    margin-bottom: 20px;
+}
+
+div.header-info .report-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+div.header-info img {
+    width: 120px;
+    height: fit-content;
+    object-fit: contain;
+
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+
+    font-size: 1px;
+}
+
+div.header-info .report-brand {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.report-content-cell section {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.report-content-cell .main {
+    margin-top: 10px;
+}
+
+.report-content-cell section div.section-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.report-content-cell section div.section-name span {
+    margin-left: 20px;
+    overflow: visible;
+}
+
+.indicator-prev {
+    height: 25px;
+    background: #885AC3;
+    width: 10px;
+
+    border-radius: 3px;
+
+    position: absolute;
+    z-index: -10;
+}
+
+.table.report-prev {
+    border: none;
+    margin: 0;
+    box-shadow: none;
+}
+
+.table.report-prev tbody td, .table.report-prev thead th {
+    text-align: start;
+    border: 1px solid #d6cfcf;
+    font-size: 11px;
+}
+
+.table.report-prev tr td, .table.report-prev tr th {
+    padding: 4px 4px 4px 8px;
+}
+
+.table.report-prev.scripts tr > * {
+    padding: 3px 3px 3px 8px;
+}
+
+.table.report-prev.scripts tbody td, .table.report-prev.scripts thead th {
+    font-size: 9px;
+}
+
+.table.report-prev tbody td span.status-prev {
+    border-radius: 3px;
+
+    width: fit-content;
+    padding: 2px 10px;
+    color: #FFF;
+
+    font-size: 11px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #885AC3;
+}
+
+.table.report-prev tbody td span.status-prev.overdue-prev-report {
+    background: #b72626;
+}
+
+.table.report-prev tbody td span.status-prev.todo-on-time {
+    background: #cbb9b9;
+    color: #000;
+}
+
+.table.report-prev tbody td span.status-prev.done-prev-report {
+    background: rgb(31, 176, 102);
+}
+
+thead.report-header {
+    display: table-header-group;
+}
+
+tfoot.report-footer {
+    display: table-footer-group;
+}
+
+div.footer-info, div.page-footer {
+    display: none;
+    height: 60px;
+}
+
+div.report-prevs-infos {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+
+    page-break-inside: avoid;
+}
+
+.table.report-prev.scripts {
+    width: 100%;
+}
+
+div.report-prevs-infos div.general {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.report-prevs-infos div.overview {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.05);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+div.report-prevs-infos div.overview * {
+    padding: 0;
+    margin: 0;
+}
+
+div.report-prevs-infos div.overview span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.main section {
+    page-break-after: always;
+}
+
+
+@media print {
+    @page {
+        size: A4;
+        margin: 8mm 8mm 8mm 8mm;
+    }
+
+    div.page-footer, div.footer-info {
+        display: block;
+    }
+}

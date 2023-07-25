@@ -1,0 +1,44 @@
+.filter-extra-container.node .filter-fields {
+    grid-template-columns: 100px 130px 130px auto auto;
+}
+
+.filter-extra-container.node .filter-buttons button.filter {
+    background: #82CD47;
+}
+
+@media (max-width: 1020px) {
+    .filter-extra-container.node {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.node .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.node .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 900px) {
+    .filter-extra-container.node .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .filter-extra-container.node .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .filter-extra-container.node .filter-fields {
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,98 @@
+.form-chip .form-chip-header-fields {
+    width: 100%;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.form-chip .form-chip-header-fields .text-box-container.code-name {
+    width: 100%;
+}
+
+.form-chip .form-chip-boxes {
+    width: 100%;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+.form-chip .form-chip-boxes .text-box-container {
+    width: 100%;
+}
+
+.form-chip .form-chip-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-chip .form-chip-boxes .form-chip-fields.two {
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+
+.form-chip .form-chip-fields-sideside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.form-chip .form-chip-fields-sideside .form-chip-fields.two {
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 1075px) {
+    .form-chip .form-chip-boxes {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .form-chip .form-chip-header-fields {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-chip .form-chip-fields-sideside {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+    .form-chip .form-chip-fields-sideside .form-chip-fields,
+    .form-chip .form-chip-fields-sideside .form-chip-fields .date-field-container {
+        width: 100%;
+    }
+
+    .form-chip .form-chip-boxes .form-box.big-half {
+        height: fit-content;
+    }
+
+    .form-chip .form-chip-boxes .form-chip-fields.two {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .form-chip .form-chip-boxes .text-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .form-chip .form-chip-boxes .text-button-container button {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 510px) {
+    .form-chip .form-chip-fields-sideside .form-chip-fields.two {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}

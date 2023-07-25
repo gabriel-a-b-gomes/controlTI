@@ -1,0 +1,111 @@
+.array-claims-container {
+    width: 100%;
+}
+
+.array-claims-container label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.array-claims-container .drop-claims-down {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px 10px;
+
+    background: #FFF;
+    border-radius: 3px;
+    border: 2px solid #d3c2c2;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.array-claims-container .drop-claims-down .dropdown-toggle {
+    font-size: 16px;
+}
+
+.array-claims-container .drop-claims-down .array-claims {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+}
+
+.array-claims-container .drop-claims-down .array-claims .selected-claims {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    width: fit-content;
+    height: 100%;
+    background: #885AC3;
+    color: #FFF;
+
+    padding: 0 1px 0 10px;
+}
+.array-claims-container .drop-claims-down .array-claims .selected-claims span {
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: left;
+}
+
+.array-claims-container .drop-claims-down .array-claims .selected-claims button.array-claim-remove {
+    border: none;
+    background: none;
+
+    font-size: 16px;
+    padding-bottom: 3px;
+    color: #FFF;
+}
+
+.array-claims-container .array-select-claims {
+    width: 100%;
+
+    border-radius: 0 0 3px 3px;
+    padding: 0;
+}
+
+.array-claims-container .array-select-claims li {
+    cursor: pointer;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    color: #664295;
+
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.array-claims-container .array-select-claims li:not(.disable) {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.array-claims-container .array-select-claims li:not(.selectable):hover {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.array-claims-container .array-select-claims li span {
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #43246c;
+}

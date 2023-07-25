@@ -1,0 +1,120 @@
+.form-ramal .form-ramal-header-fields {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.form-ramal .form-ramal-header-fields .text-box-container.code-name {
+    width: 100%;
+}
+
+.form-ramal .form-ramal-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-ramal .form-ramal-fields.one {
+    gap: 0;
+}
+
+.form-ramal .form-ramal-fields.two {
+    grid-template-columns: auto auto;
+}
+
+.form-ramal .form-ramal-fields.info-main {
+    width: 60%;
+}
+
+.form-ramal .form-ramal-fields.config-main {
+    width: 50%;
+}
+
+.form-ramal .form-ramal-fields.info-main .text-box-container, 
+.form-ramal .form-ramal-fields.config-main .text-box-container {
+    width: 100%;
+}
+
+.form-ramal .form-ramal-fields-sideside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .form-ramal .form-box.side-side {
+        flex-direction: row !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .form-ramal .form-box.side-side.config {
+        flex-direction: column !important;
+    }
+
+    .form-ramal .form-box.side-side.config .form-ramal-fields,
+    .form-ramal .form-box.side-side.config .form-ramal-fields .text-box-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .form-ramal .form-ramal-fields.info-main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 860px) {
+    .form-ramal .form-box.side-side {
+        flex-direction: column !important;
+        align-items: flex-end;
+    }
+
+    .form-ramal .form-box.side-side .form-ramal-fields.two {
+        width: 100%;
+    }
+}
+
+@media (max-width: 730px) {
+    .form-ramal .form-ramal-header-fields {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-ramal .form-ramal-fields-sideside {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .form-ramal .form-ramal-fields-sideside .form-ramal-fields.two {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .form-ramal .form-box.side-side .form-ramal-fields.info-main {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .form-ramal .form-box.side-side .form-ramal-fields.two {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .form-ramal .form-ramal-fields-sideside .form-ramal-fields {
+        width: 100%;
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-ramal .form-ramal-fields-sideside .date-field-container {
+        width: 100%;
+    }
+}

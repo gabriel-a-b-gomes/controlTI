@@ -1,0 +1,166 @@
+.settings-index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+
+
+}
+
+.settings-index-container .settings-index-area {
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto;
+
+    width: 100%;
+    border: 2px solid #C1A6E3;
+    border-radius: 5px;
+}  
+
+.settings-index-area .settings-index-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+
+    padding: 0 30px;
+
+}
+
+.settings-index-area .settings-index-header span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6839A4;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+
+}
+
+.settings-index-area .settings-index-header span button {
+    border: none;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.8)
+}
+
+.settings-index-area .settings-index-header button.add {
+    font-size: 36px;
+    font-weight: 700;
+    color: #6839A4;
+
+    border: none;
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    background: #FFF;
+}
+
+.settings-index-body {
+    height: fit-content;
+    min-height: 200px;
+
+    border-top: 1px solid #C1A6E3;
+
+    display: flex;
+    justify-content: center;
+}
+
+.settings-index-body .table, .settings-index-body .table thead {
+    border-top: none;
+}
+
+.settings-index-body .table {
+    height: min-content;
+    margin-bottom: 0;
+}
+
+.settings-index-body .table tr th:last-child, .settings-index-body .table tr td:last-child {
+    text-align: center;
+}
+
+.settings-index-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 20px 20px 0;
+
+    border-top: 1px solid #C1A6E3;
+    height: fit-content;
+}
+
+.search-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 40px;
+    background: #F3F3F3;
+
+    box-shadow: 0 -1px 1px 1px rgba(0, 0, 0, 0.03);
+} 
+
+.search-settings .search-settings-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    border: none;
+    background: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(37, 37, 37, 0.8);
+}
+
+.search-settings .search-preventives-button:hover {
+    background: #f0efef;
+}
+
+.search-settings .search-container {
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-settings .search-container .choose-filter-option {
+    min-width: max-content;
+}
+
+.search-settings .close-all-button {
+    background: #e8e7e7;
+}
+
+@media (max-width: 1160px) {
+    .settings-index-area {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .settings-index-body .table, .settings-index-body .table th:not(:last-child), .settings-index-body .table, .settings-index-body .table td:not(:last-child) {
+        white-space: nowrap;
+        padding-right: 50px;
+    }
+}

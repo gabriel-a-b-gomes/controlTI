@@ -1,0 +1,166 @@
+.form-srv-host .form-host-header-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-srv-host .form-host-header-fields .text-box-container {
+    width: 100%;
+}
+
+.form-srv-host .form-host-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-srv-host .form-host-fields.three {
+    grid-template-columns: auto auto auto;
+}
+
+.form-srv-host .form-host-fields.two {
+    grid-template-columns: auto auto;
+}
+
+.form-srv-host .form-host-fields.four {
+    grid-template-columns: auto auto auto auto;
+}
+
+.form-srv-host .form-host-fields.funcs {
+    width: 28%;
+}
+
+.form-srv-host .form-host-fields.funcs .array-multi-select-container {
+    width: 100%;
+}
+
+.form-srv-host .form-host-boxes {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-srv-host .form-host-fields.four.storage .text-box-container.auto {
+    width: 200px;
+}
+
+.form-srv-host .form-host-fields.three.memos .text-box-container.small {
+    width: 100px;
+}
+
+.form-srv-host .form-host-fields.four.storage .text-box-container.small {
+    width: 90px;
+}
+
+.form-srv-host .form-host-fields-sideside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-srv-host .array-multi-select-container .drop-multi-select-down .array-multi-selected .selected-option {
+    background: #7770A1;
+}
+
+.form-srv-host .array-field-container .array-include-item {
+    background: #7770A1;
+}
+
+.form-srv-host .array-multi-select-container .multi-label button {
+    background: #7770A1;
+}
+.form-srv-host .array-multi-select-container .multi-label button:hover {
+    background: #665d98;
+}
+
+@media (max-width: 1400px) {
+    .form-srv-host .form-host-boxes {
+        flex-direction: column;
+    }
+
+    .form-srv-host .form-host-boxes .form-box.half {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .form-srv-host .form-box.side-side {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .form-srv-host .form-box.side-side .form-host-fields {
+        width: 100%;
+    }
+
+    .form-srv-host .form-box.side-side .form-host-fields.three .text-box-container {
+        width: 100%;
+    }
+
+    .form-srv-host .form-box.side-side .form-host-fields.funcs {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .form-srv-host .form-host-fields-sideside {
+        flex-direction: column;
+    }
+
+    .form-srv-host .form-host-fields-sideside .form-host-fields,
+    .form-srv-host .form-host-fields-sideside .form-host-fields .text-box-container,
+    .form-srv-host .form-host-fields-sideside .form-host-fields .date-field-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    .form-srv-host .form-host-header-fields {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-srv-host .form-host-header-fields .text-box-container {
+        width: 100%;
+    }
+
+    .form-srv-host .form-box.side-side .form-host-fields.three {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-srv-host .form-host-fields.four.storage {
+        grid-template-columns: auto auto;
+    }
+
+    .form-srv-host .form-host-fields-sideside .form-host-fields.three {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-srv-host .form-host-fields.three.memos {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-srv-host .form-host-fields.four.storage,
+    .form-srv-host .form-host-fields.three.memos,
+    .form-srv-host .form-host-fields.four.storage .text-box-container.auto, 
+    .form-srv-host .form-host-fields.three.memos .text-box-container.auto {
+        width: 100%;
+    } 
+
+    .form-srv-host .form-host-fields.four.storage, .form-srv-host .form-host-fields.three.memos {
+        grid-template-columns: auto;
+    }
+}

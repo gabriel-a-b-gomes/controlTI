@@ -1,0 +1,112 @@
+.box-container.employee .box-main {
+    border-color: #885AC3;
+}
+
+.box-container.employee .box-main .box-area .box-all-general-info {
+    grid-template-columns: 28% 37% 35%;
+}
+
+.box-container.employee .box-details {
+    background: #9267cb;
+    color: #fff;
+}
+
+.box-container.employee .box-main .indicator.enable {
+    background: #885AC3;
+}
+
+.box-container.employee .box-main .indicator.disable {
+    background: #000;
+}
+
+@media (max-width: 1140px) {
+    .box-container.employee .box-main {
+        height: 100px;
+    }
+
+    .box-container.employee .box-area .title {
+        grid-area: title;
+    }
+
+    .box-container.employee .box-area .box-column {
+        grid-area: bcolumn;
+    }
+
+    .box-container.employee .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general;
+    }
+
+    .box-container.employee .expand {
+        grid-area: expand;
+    }
+
+    .box-container.employee .box-area {
+        grid-template-columns: auto 47% 5%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title bcolumn expand"
+            "general general general";
+    }
+}
+
+@media (max-width: 950px) {
+    .box-container.employee .box-details {
+        grid-template-columns: 35% 35% 35%;
+        padding: 5px 20px;
+    }
+
+    .box-container.employee .box-details .box-topic {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    .box-container.employee .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+}
+
+@media (max-width: 750px) {
+    .box-container.employee .box-main {
+        height: 180px;
+    }
+
+    .box-container.employee .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 8px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .box-container.employee .box-main {
+        height: 240px;
+    }
+    
+    .box-container.employee .box-area {
+        grid-template-columns: auto 54% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title title expand"
+            "bcolumn bcolumn bcolumn"
+            "general general general";
+    }
+}
+
+
+@media (max-width: 600px) {
+    .box-container.employee .box-details {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .box-container.employee .box-details {
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,144 @@
+.form-header-area {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    width: 100%;
+}
+
+.form-multifields-area.three {
+    grid-template-columns: auto auto auto;
+}
+
+.form-controls { 
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 10px;
+}
+
+.form-multifields-area {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+.form-fields-sideside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .form-box.side-side {
+        flex-direction: column;
+    }
+
+    .form-box.side-side .form-controls {
+        margin: 0;
+    }
+
+    .form-box.side-side .form-multifields-area.three {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .form-box.side-side .form-multifields-area.three .text-box-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .form-fields-sideside {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-fields-sideside .form-multifields-area {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-fields-sideside .form-multifields-area .text-box-container, 
+    .form-fields-sideside .form-multifields-area .date-field-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .form-box.side-side .form-multifields-area.three {
+        grid-template-columns: auto;
+
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .form-header h1 {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+
+    .form-header-area {
+        flex-direction: column;
+    }
+
+    .form-header-area .text-box-container.code, .form-header-area .text-box-container.location {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form.dropdown {
+        width: 100%;
+    }
+
+    .form.dropdown .select {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdevice {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .form-fields-sideside .form-multifields-area {
+        grid-template-columns: auto;
+    }
+
+    .form-box.side-side .form-multifields-area.three {
+        margin: 0;
+    }
+
+    .form-box.side-side .form-controls {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .form-box.side-side .form-controls .checkbox-container {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}

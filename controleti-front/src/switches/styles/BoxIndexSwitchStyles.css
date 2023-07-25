@@ -1,0 +1,106 @@
+.box-container.switch .box-main {
+    border-color: #D71E28;
+}
+
+.box-container.switch .box-details {
+    background: #db252f;
+    color: #FFF;
+
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.box-container.switch .box-main .indicator.enable {
+    background: #D71E28;
+}
+
+.box-container.switch .box-main .indicator.disable {
+    background: #000;
+}
+
+@media (max-width: 1140px) {
+    .box-container.switch .box-main {
+        height: 100px;
+    }
+
+    .box-container.switch .box-area .title {
+        grid-area: title;
+    }
+
+    .box-container.switch .box-area .box-column {
+        grid-area: bcolumn;
+    }
+
+    .box-container.switch .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general;
+    }
+
+    .box-container.switch .expand {
+        grid-area: expand;
+    }
+
+    .box-container.switch .box-area {
+        grid-template-columns: auto 62% 3%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title bcolumn expand"
+            "general general general";
+    }
+}
+
+@media (max-width: 950px) {
+    .box-container.switch .box-area {
+        grid-template-columns: auto 47% 5%;
+    }
+
+    .box-container.switch .box-details {
+        grid-template-columns: 35% 35% 35%;
+        padding: 5px 20px;
+    }
+
+    .box-container.switch .box-details .box-topic {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 750px) {
+    .box-container.switch .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+}
+
+@media (max-width: 670px) {
+    .box-container.switch .box-main {
+        height: 240px;
+    }
+    
+    .box-container.switch .box-area {
+        grid-template-columns: auto 54% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title title expand"
+            "bcolumn bcolumn bcolumn"
+            "general general general";
+    }
+
+    .box-container.switch .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 8px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .box-container.switch .box-details {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .box-container.switch .box-details {
+        grid-template-columns: 100%;
+    }
+}

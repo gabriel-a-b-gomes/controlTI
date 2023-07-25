@@ -1,0 +1,192 @@
+.pagination {
+    width: fit-content;
+
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px 0;
+    width: 30px;
+    border-right: 2px solid #f8efef;
+}
+
+.link-item:last-child {
+    border: none;
+}
+
+.link-item.pointer {
+    cursor: pointer;
+}
+
+.link-item.pointer:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Link Active for All of Index */
+
+.link-item.active {
+    cursor: pointer;
+    background: #9861e0;
+    width: 36px;
+}
+
+.link-item.active.computer {
+    background: #BD9E3E;
+}
+
+.link-item.active.srv-host {
+    background: #1F598E;
+}
+
+.link-item.active.ramal {
+    background: #F2921D;
+}
+
+.link-item.active.dvr {
+    background: #425c76;
+}
+
+.link-item.active.chip {
+    background: #693aa6;
+}
+
+.link-item.active.nobreak {
+    background: #ff3f34;
+}
+
+.link-item.active.printer {
+    background: #2980b9;
+}
+
+.link-item.active.router {
+    background: #F09B1A;
+}
+
+.link-item.active.switch {
+    background: #D71E28;
+}
+
+.link-item.active.node {
+    background: #6fb13b;
+}
+
+.link-item.active.employee {
+    background: #885AC3;
+}
+
+.link-item.active.vpn {
+    background: #b1250e;
+}
+
+.link-item.active.skype {
+    background: #00aff0;
+}
+
+/* Hover Link Active for All of Index */
+
+.link-item.active:hover {
+    background-color: #835cb5;
+}
+
+.link-item.active.computer:hover {
+    background: #a78a36;
+}
+
+.link-item.active.ramal:hover {
+    background: #eb8d1c;
+}
+
+.link-item.active.dvr:hover {
+    background: #2c3e50;
+}
+
+.link-item.active.chip:hover {
+    background: #582698;
+}
+
+.link-item.active.nobreak:hover {
+    background: #de352c;
+}
+
+.link-item.active.printer:hover {
+    background: #1f6290;
+}
+
+.link-item.active.router:hover {
+    background: #d48815;
+}
+
+.link-item.active.switch:hover {
+    background: #be131c;
+}
+
+.link-item.active.node:hover {
+    background: #82CD47;
+}
+
+.link-item.active.employee:hover {
+    background: #6f41aa;
+}
+
+.link-item.active.vpn:hover {
+    background: #c93119;
+}
+
+.link-item.active.skype:hover {
+    background: #0184b4;
+}
+
+.link-item.active.srv-host:hover {
+    background: #1d507f;
+}
+
+/* Finish Link Active */
+
+.link-item.disable {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.link-item-text {
+    color: #381f5a;
+    font-weight: 500;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.link-item.active .link-item-text {
+    color: #FFF;
+}
+
+.records-container {
+    display: flex;
+    flex-direction: row;
+
+    width: fit-content;
+}
+
+.records-container label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+
+    margin-right: 10px;
+}
+
+.records-container .records-select {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+
+    color: rgba(0, 0, 0, 0.7); 
+    font-weight: 600;
+    font-size: 16px;
+}

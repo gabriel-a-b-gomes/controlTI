@@ -1,0 +1,384 @@
+.box-preventive-container {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 50px;
+
+    border: 2px solid #cfc4a9;
+    border-radius: 5px;
+}
+
+.box-preventive-container button { 
+    border: none;
+    background: none;
+}
+
+.box-preventive-container .box-preventive-area {
+    width: 100%;
+
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: 30% 70%;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-preventive-container .box-preventive-area .preventive-title {
+    font-size: 18px;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 10% 35% 55%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-preventive-container .box-preventive-area .preventive-title span {
+    margin-left: 15px;
+    border-radius: 3px;
+
+    width: fit-content;
+    padding: 2px 10px;
+    color: #FFF;
+
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #885AC3;
+}
+
+.box-preventive-container .box-preventive-area .preventive-title .computer-hint {
+    margin-left: 20px;
+    padding: 5px 0;
+    display: grid;
+    gap: 0;
+}
+
+.box-preventive-container .box-preventive-area .preventive-title .computer-hint span {
+    background: none;
+    border-radius: 0;
+
+    font-weight: 11px;
+
+    font-weight: 400;
+    color: #000;
+
+    padding: 0;
+    margin: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.box-preventive-container .box-preventive-area .preventive-title .computer-hint span.employee {
+    font-weight: 600;
+}
+
+.box-preventive-container .box-preventive-area .box-preventive-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.box-preventive-container .box-preventive-area .box-preventive-middle .log-preventive-button {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box-preventive-container .box-preventive-area .box-preventive-middle .log-preventive-button span {
+    margin-right:  10px;
+}
+
+.box-preventive-container .box-preventive-area .box-preventive-middle .log-preventive-button:hover {
+    opacity: 0.8;
+}
+
+.box-preventive-container .box-preventive-buttons {
+    width: 200px;
+
+    background: #FDF5F5;
+    border-radius: 0 5px 5px 0;
+
+    display: grid;
+    align-items: center;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    box-shadow: -1px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.box-preventive-container .box-preventive-buttons button {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background: #885AC3;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
+    height: 25px;
+
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-preventive-container .box-preventive-buttons button:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.box-preventive-container .box-preventive-buttons button.cancel {
+    background: #CE4E4E;
+}
+
+.box-preventive-container .done-preventive-middle {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto auto;
+}
+
+.box-preventive-container .done-preventive-middle .done-preventive-infos {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.box-preventive-container .done-preventive-middle .done-preventive-infos .done-preventive-info {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.box-preventive-container .done-preventive-middle .done-preventive-infos .done-preventive-info .info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.box-preventive-container .box-preventive-buttons .triple {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button {
+    border: none;
+    background: none;
+
+    font-size: 16px;
+
+    box-shadow: none;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.edit {
+    color: #6839A4;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.edit:hover {
+    color: #4d2a7c;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.trash {
+    color: #F80303;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.trash:hover {
+    color: #c20000;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.new {
+    color: #321656;
+}
+
+.box-preventive-container .box-preventive-buttons .triple button.new:hover {
+    color: #8559be;
+}
+
+.box-preventive-container .todo-preventive-middle {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.box-preventive-container .todo-preventive-middle .todo-preventive-infos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.box-preventive-container .todo-preventive-middle .todo-preventive-infos span.over-due {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    background: #b72626;
+    padding: 2px 5px;
+
+    border-radius: 3px;
+}
+
+.box-preventive-container .todo-preventive-middle .todo-preventive-infos .todo-preventive-info {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.box-preventive-container .todo-preventive-middle .todo-preventive-infos .todo-preventive-info .info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+    .box-preventive-container {
+        height: fit-content;
+    }
+
+    .box-preventive-container .box-preventive-area {
+        display: flex;
+        flex-direction: column;
+
+        padding: 10px;
+    }
+
+    .box-preventive-container .box-preventive-area .preventive-title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+
+        padding-left: 10px;
+    }
+
+    .box-preventive-container .todo-preventive-middle, .box-preventive-container .done-preventive-middle {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box-preventive-container .todo-preventive-middle .todo-preventive-infos {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .box-preventive-container .done-preventive-middle {
+        gap: 20px;
+    }
+
+    .box-preventive-container .done-preventive-middle .done-preventive-infos {
+        margin-right: 10px;
+    }
+
+    .box-preventive-container .todo-preventive-middle .todo-preventive-infos .over-due {
+        margin-right: 15px;
+    }
+
+
+    .box-preventive-container .box-preventive-area .box-preventive-middle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 980px) {
+    .box-preventive-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box-preventive-container .box-preventive-buttons {
+        width: 100%;
+        border-radius: 0 0 3px 3px;
+        height: fit-content;
+        padding: 10px 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-preventive-container .box-preventive-buttons button {
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box-preventive-container .box-preventive-buttons .triple {
+        justify-content: flex-end;
+    }
+
+    .box-preventive-container .box-preventive-buttons .triple button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 810px) {
+    .box-preventive-container .todo-preventive-middle {
+        align-items: flex-end;
+    }
+    .box-preventive-container .todo-preventive-middle .todo-preventive-infos {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-right: 5px;
+    }
+
+    .box-preventive-container .todo-preventive-middle .todo-preventive-infos .over-due {
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .box-preventive-container .done-preventive-middle {
+        align-items: flex-end;
+    }
+    .box-preventive-container .done-preventive-middle .done-preventive-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        gap: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .box-preventive-container .todo-preventive-middle, .box-preventive-container .done-preventive-middle {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        gap: 15px;
+    }
+}

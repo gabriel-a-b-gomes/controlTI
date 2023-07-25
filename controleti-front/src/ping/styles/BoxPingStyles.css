@@ -1,0 +1,223 @@
+ul.pings-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+.box-ping-container {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 45px;
+
+    border: 2px solid #cfc4a9;
+    border-radius: 5px;
+}
+
+.box-ping-container:hover {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.box-ping-container .box-ping-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    padding: 5px 20px;
+
+    font-size: 20px;
+}
+
+
+.box-ping-container .box-ping-title span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b3131;
+
+    padding: 2px 10px;
+    border-radius: 3px;
+
+    border: 2px solid;
+    border-color: #000;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.box-ping-container .box-ping-title .status {
+    font-size: 12px;
+    font-weight: 500;
+    color: #664545;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    padding: 0 8px;
+    border-radius: 3px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-ping-container .box-ping-title .status.active {
+    background: rgba(40, 236, 135, 0.605);
+}
+
+.box-ping-container .box-ping-title .status.disable {
+    background: rgba(236, 40, 40, 0.4);
+}
+
+.box-ping-container .box-ping-title .status .indicator-ip-status {
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+
+    background: #000;
+}
+
+.box-ping-container .box-ping-title .status.active .indicator-ip-status {
+    background: rgb(19, 185, 77);
+}
+
+.box-ping-container .box-ping-title .status.disable .indicator-ip-status {
+    background: rgb(212, 57, 18);
+}
+
+.box-ping-container .box-ping-content {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    width: 50%;
+
+    grid-template-columns: auto 15% 20%;
+
+    padding: 0 20px;
+}
+
+.box-ping-container .box-ping-content span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box-ping-container .box-ping-content span strong {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.box-ping-container .buttons-ping {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.box-ping-container .buttons-ping button {
+    border: none;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 8px;
+
+    font-size: 16px;
+    color: #2b0a55;
+
+    border-radius: 3px;
+}
+
+.box-ping-container .buttons-ping button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.box-ping-container .ping-obs {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.box-ping-container .ping-obs span {
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 12px;
+    font-weight: 600;
+}   
+
+.box-ping-container .ping-obs .title-obs {
+    font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+    .box-ping-container {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 0;
+
+        gap: 5px;
+    }
+
+    .box-ping-container .box-ping-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .box-ping-container .ping-obs {
+        width: fit-content;
+    }
+
+    .box-ping-container .ping-obs .title-obs {
+        display: none;
+    }
+
+    .box-ping-container .box-ping-title .status {
+        width: 100px;
+    }
+}
+
+@media (max-width: 680px) {
+    .box-ping-container .ping-obs {
+        width: 70px;
+    }
+
+    .box-ping-container .box-ping-title .status {
+        width: 80px;
+    }
+}
+
+@media (max-width: 570px) {
+    .box-ping-container .ping-obs {
+        display: none;
+    }
+
+    .box-ping-container .box-ping-title .status {
+        width: max-content;
+    }
+
+    .box-ping-container .box-ping-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}

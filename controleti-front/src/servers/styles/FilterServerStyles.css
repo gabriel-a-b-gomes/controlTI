@@ -1,0 +1,78 @@
+.filter-extra-container.server .filter-fields {
+    grid-template-columns: 120px 120px 80px auto auto auto auto;
+
+    align-items: center;
+}
+
+.filter-extra-container.server .filter-fields .field-from-to .text-box-container {
+    width: 70px;
+}
+
+.filter-extra-container.server .filter-fields .field-from-to .date-field-container {
+    width: 108px;
+}
+
+.filter-extra-container.server .filter-buttons button.filter {
+    background: #1F598E;
+}
+
+@media (max-width: 1480px) {
+    .filter-extra-container.server {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.server .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.server .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1300px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto auto auto auto auto auto;
+    } 
+}
+
+@media (max-width: 1275px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1070px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 1020px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 870px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .filter-extra-container.server .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .filter-extra-container.server .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}

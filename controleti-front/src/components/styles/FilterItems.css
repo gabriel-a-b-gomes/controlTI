@@ -1,0 +1,388 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px 30px;
+
+    border: 1px solid #9E70D9;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-title .nav-new {
+    text-decoration: none !important;
+}
+
+.filter-title .new-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 36px;
+    padding: 0 44px;
+    margin-right: 40px;
+
+    border: none;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+
+    border-radius: 3px;
+
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.filter-title .new-button:hover {
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.filter-title span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+
+    margin-right: 10px;
+}
+
+.filter-title .refresh-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background: none;
+
+    color: #4A4242;
+}
+
+.filter-title .refresh-button:hover {
+    color: #7d7b7b;
+}
+
+.filter-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 40px;
+    background: #F3F3F3;
+
+    border-radius: 3px;
+}
+
+.filter-search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    border: none;
+    background: none;
+    color: rgba(37, 37, 37, 0.8);
+}
+
+.search-button, .options {
+    width: 40px;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-button:hover, .options:hover {
+    background: #f0efef;
+}
+
+.options.active {
+    background: #d5d5d5;
+}
+
+form.filter-form {
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .filter-area { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .filter-title {
+        margin-bottom: 10px;
+    }
+
+    .filter-search {
+        width: 100%;
+    }
+
+    .filter-search .search-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-area .filter-title .nav-new {
+        grid-area: new;
+    } 
+
+    .filter-area .filter-title span {
+        grid-area: title;
+    }
+
+    .filter-area .filter-title .refresh-button {
+        grid-area: refresh;
+    }
+
+    .filter-area .filter-title {
+        display: grid;
+        grid-template-areas: 
+            "new refresh"
+            "title title";
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .filter-area {
+        padding: 0; 
+        padding-bottom: 20px;
+
+        border: none;
+        border-bottom: 1px solid #9E70D9;
+
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .filter-area {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+
+.container-search {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    grid-area: search-filter;
+}
+
+/* SEARCH AREA QUERYES */
+
+@media (max-width: 700px) {
+    .filter-search .search-button {
+        width: 100%;
+        grid-area: search-button;
+    }
+
+    .filter-search .options {
+        width: 100%;
+        grid-area: options-filter;
+    }
+
+    .filter-search .search-container input[type="text"] {
+        grid-area: input-filter;
+    }
+
+    .filter-search .search-container .add-search-button {
+        grid-area: add-filter-search;
+    }
+
+    .filter-search .search-container .dropdown {
+        grid-area: drop-filter;
+    }
+
+    .filter-search .search-container .dropdown .choose-filter-option {
+        width: 100%;
+        max-width: 100%;
+        padding: 3px 10px;
+        border-top: 2px solid #cdcbcb;
+        justify-content: space-between;
+        margin: 0;
+        height: 35px;
+    }
+
+    .filter-search .search-container .dropdown .choose-filter-option.search-drop {
+        border: none;
+    }
+
+    .filter-search .search-container .dropdown.items {
+        grid-area: search-items-filter;
+        width: 100%;
+        border-top: 2px solid #cdcbcb;
+        height: 35px;
+    }
+
+    .filter-search {
+        height: fit-content;
+        display: grid;
+        grid-template-areas: 
+            "options-filter search-button"
+            "search-filter search-filter";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40px 80px;
+    }
+
+    .filter-search .search-container {
+        display: grid;
+        gap: 0;
+        grid-template-areas: 
+            "input-filter input-filter input-filter add-filter-search"
+            "search-items-filter search-items-filter drop-filter drop-filter";
+        grid-template-columns: 25% 25% 44% 6%;
+        grid-template-rows: 40px 40px;
+    }
+
+    .filter-search .filter-options {
+        margin-top: 5px !important;
+    }
+
+    .filter-search .search-items {
+        margin-top: 3px !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .filter-search .search-container {
+        grid-template-columns: 25% 25% 42% 8%;
+    }
+}
+
+@media (max-width: 400px) {
+    .filter-search .search-container {
+        grid-template-areas: 
+            "input-filter add-filter-search"
+            "search-items-filter search-items-filter"
+            "drop-filter drop-filter";
+        grid-template-columns: 92% 8%;
+        grid-template-rows: 40px 40px 40px;
+    }
+
+    .filter-search {
+        grid-template-rows: 40px 120px;
+    }
+
+    .filter-search .filter-options,.filter-search .search-items {
+        width: 100%;
+    }
+}
+
+
+/********************* Filter Extra Styles **************************************************************************************************/
+
+.filter-extra {
+    width: 100%;
+    padding: 10px 30px;
+
+    background: rgba(235, 235, 235, 0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+    border-radius: 0 0 3px 3px;
+}
+
+.filter-extra .filter-buttons {
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: auto auto;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.filter-extra .filter-buttons button {
+    border: none;
+    border-radius: 3px;
+
+    height: 30px;
+
+    padding: 0 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.filter-extra .filter-buttons button.clear {
+    background: rgb(255, 227, 248);
+    color: #000;
+} 
+
+.filter-extra-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-extra-container .filter-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.filter-extra-container .filter-fields .text-box-container { 
+    width: 100%;
+}
+
+.filter-extra-container .filter-fields .field-from-to {
+    display: flex;
+
+    align-items: flex-end;
+}
+
+.filter-extra-container .filter-fields .field-from-to span {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.filter-extra-container .filter-fields .field-from-to .text-box-container {
+    width: 70px;
+}
+
+.filter-extra-container .filter-fields .field-from-to .date-field-container {
+    width: 120px;
+}
+
+.filter-extra-container .filter-fields .field-from-to .date-field-container label, .filter-extra-container .filter-fields .text-box-container label {
+    overflow: visible !important;
+}
+
+.filter-extra-container .filter-buttons button.filter {
+    background: #D71E28;
+}
+
+.filter-extra-container .filter-buttons button.filter:hover, .filter-extra-container .filter-buttons button.clear:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.07);
+}

@@ -1,0 +1,49 @@
+.form-profiles {
+    display: grid;
+    gap: 20px;
+
+    grid-template-rows: auto auto;
+}
+
+.form-profiles .form-profiles-area {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto auto;
+
+    margin-bottom: 30px;
+}
+
+.form-profiles-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-profiles-fields .form-fields {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+.form-profiles-fields .select-container {
+    width: 200px;
+}
+
+@media (max-width: 1300px) {
+    .form-profiles-fields {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .form-profiles-fields:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .form-profiles-fields .form-fields,
+    .form-profiles-fields .text-box-container,
+    .form-profiles-fields .select-container {
+        width: 100%;
+    }
+}

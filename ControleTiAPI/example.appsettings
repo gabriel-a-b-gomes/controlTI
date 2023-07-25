@@ -1,0 +1,19 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": ""
+  },
+  "frontend_url": "",
+  "AzureAd": {
+    "scopes": "",
+    "Instance": "",
+    "Domain": "",
+    "ClientId": "",
+    "TenantId": ""
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "",
+      "Microsoft.AspNetCore": ""
+    }
+  }
+}

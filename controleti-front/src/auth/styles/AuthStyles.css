@@ -1,0 +1,286 @@
+.auth-container {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.auth-container.n-allowed {
+    position: relative;
+}
+
+.auth-container .sign-in-area {
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    width: 30%;
+
+    border-radius: 5px;
+
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auth-container .control-brand {
+    font-size: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.auth-container .control-brand span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.auth-container .sign-in-area button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.05);
+
+    background: linear-gradient(to right top, #8f61ca, #744AAA);
+}
+
+.auth-container .sign-in-area button:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.auth-container .enterprise {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.auth-container img {
+    width: 20%;
+    height: fit-content;
+    object-fit: contain;
+}
+
+@media (max-width: 1130px) {
+    .auth-container .sign-in-area {
+        width: fit-content;
+    }
+
+    .auth-container img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+    .auth-container img {
+        width: 35%;
+    }
+}
+
+@media (max-width: 600px) {
+    .auth-container img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    .auth-container .sign-in-area {
+        width: 90%;
+    }
+
+    .auth-container .control-brand {
+        font-size: 90px;
+    }
+
+    .auth-container .control-brand span {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 332px) {
+    .auth-container .control-brand span {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .auth-container .control-brand {
+        font-size: 70px;
+    }
+
+    .auth-container .control-brand span {
+        font-size: 35px;
+    }
+}
+
+/* ================ NotAllowed ================ */
+
+.not-allowed-area {
+    display: grid;
+    gap: 5px;
+
+    width: 80%;
+
+    margin-top: 50px;
+}
+
+.not-allowed-area .status-not-allowed {
+
+    font-size: 50px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.not-allowed-area .status-not-allowed span {
+    font-size: 100px;
+    font-weight: bold;
+
+    color: #8e1313
+}
+
+.back-page-button {
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-page-button button {
+    padding: 5px 50px;
+
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right top, #9a4d4d, #8e1313);
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.back-page-button button:hover {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 700px) {
+    .not-allowed-area {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .not-allowed-area {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .not-allowed-area .status-not-allowed span {
+        font-size: 70px;
+    }
+
+    .not-allowed-area .back-page-button button {
+        width: 100%;
+    }
+}
+
+/* ================ NotAuthenticated ================ */
+
+.not-authenticated-area {
+    display: grid;
+    gap: 5px;
+
+    width: 60%;
+}
+
+.not-authenticated-area .status-not-authenticated {
+    font-size: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+.not-authenticated-area .status-not-authenticated h3 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.not-authenticated-area .status-not-authenticated span {
+    font-size: 100px;
+    font-weight: bold;
+
+    color: #8e1313
+}
+
+.not-authenticated-area .back-page-button button {
+    background: linear-gradient(to right top, #8f61ca, #744AAA);
+}
+
+@media (max-width: 770px) {
+    .not-authenticated-area .status-not-authenticated {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .not-authenticated-area .status-not-authenticated h3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    .not-authenticated-area {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .not-authenticated-area {
+        width: 90%;
+    }
+
+    .not-authenticated-area .status-not-authenticated span {
+        font-size: 80px;
+    }
+
+    .not-authenticated-area .back-page-button button {
+        width: 100%;
+    }
+}
+

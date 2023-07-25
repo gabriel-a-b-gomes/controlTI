@@ -1,0 +1,111 @@
+.form-node .form-n-fields-header {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+
+    width: 100%;
+}
+
+.form-node .form-n-fields-header .text-box-container {
+    width: 100%;
+}
+
+.form-node .form-n-fields-row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+}
+
+.form-node .form-n-fields {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+
+    width: 100%;
+}
+
+.form-node .form-n-fields .text-box-container {
+    width: 100%;
+}
+
+.form-node .form-n-fields-bt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.form-node .textarea-container {
+    margin: 0;
+}
+
+@media (max-width: 1410px) {
+    .form-node .form-n-fields-row {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 1075px) {
+    .form-node .form-n-fields-bt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-node .form-n-fields-row .form-n-fields {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-node .form-header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .form-node .form-header h1 {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+
+    .form-node .form.dropdown {
+        width: 100%;
+    }
+
+    .form-node .form.dropdown .select {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-node .dropdevice {
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .form-node .form-n-fields-header {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+@media (max-width: 555px) {
+    .form-node .form-n-fields-bt {
+        flex-direction: column;
+    }
+}

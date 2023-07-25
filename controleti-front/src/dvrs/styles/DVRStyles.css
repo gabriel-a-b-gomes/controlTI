@@ -1,0 +1,132 @@
+.form-dvr-header-fields {
+    display: flex;
+    width: 100%;
+}
+
+.form-dvr-middle-fields {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+}
+
+.form-drv-fields {
+    display: grid;
+    gap: 10px;
+}
+
+.form-drv-fields.two {
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.form-drv-fields.one {
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+.form-drv-fields.two-details {
+    grid-template-columns: auto auto;
+}
+
+.form-drv-fields.three-details {
+    grid-template-columns: auto auto auto;
+}
+
+.form-drv-fields.two-sr {
+    grid-template-columns: auto 150px;
+    width: 100%;
+}
+
+.form-drv-fields.two-srck {
+    grid-template-columns: auto 170px;
+    width: 100%;
+
+    margin-bottom: 0;
+}
+.form-drv-fields.two-srck .checkbox-container {
+    padding-right: 0;
+}
+
+.form-drv-fields.two-sl {
+    grid-template-columns: 150px auto;
+    width: 100%;
+}
+
+.form-dvr-middle-fields .text-box-container.auto {
+    width: 100%;
+}
+
+.form-dvr-fields-sideside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    .form-dvr-middle-fields {
+        grid-template-columns: auto;
+    }
+
+    .form-dvr-fields-sideside {
+        flex-direction: column;
+    }
+
+    .form-dvr-fields-sideside .form-drv-fields {
+        margin-bottom: 5px;
+    }
+
+    .form-dvr-fields-sideside .date-field-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-dvr-header-fields {
+        flex-direction: column;
+    }
+    .form-dvr-header-fields .text-box-container.code {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-drv-fields.two-sl {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-dvr-middle-fields .form-box.big-half {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-drv-fields.two-sr {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .form-dvr-fields-sideside .form-drv-fields {
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+
+    .form-dvr-middle-fields .form-drv-fields.two-srck {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .form-dvr-middle-fields .form-drv-fields.two-srck .checkbox-container {
+        justify-content: flex-end;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-dvr-middle-fields .form-drv-fields.two {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}

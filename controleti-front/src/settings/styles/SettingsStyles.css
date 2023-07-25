@@ -1,0 +1,303 @@
+.container-settings {
+    width: 100%;
+
+    padding: 0 100px 50px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.dummy {
+    height: 10px;
+}
+
+.index-boxes-settings {
+    margin-top: 20px;
+
+    display: grid;
+    gap: 10px;
+
+    width: 100%;
+
+    grid-template-columns: auto auto;
+}
+
+.nav-settings {
+
+    width: 100%;
+    height: fit-content;
+
+    background: #FFF;
+
+}
+
+.nav-settings nav {
+    width: 100%;
+}
+
+.nav-settings nav .tab-action-settings button {
+    height: 100%;
+    width: 80px;
+
+    border: none;
+    background: #FFF;
+    border-top-right-radius: 5px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #6839A4;
+}
+
+.tabs-settings {
+    width: 100%;
+    display: flex;
+
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.01);
+}
+
+.tabs-settings > * {
+    width: 100%;
+    height: 40px;
+}
+
+.tabs-settings > * button {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    background: #FFF;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #885AC3;
+}
+
+.tabs-settings > *:last-child button {
+    border-radius: 0 3px 3px 0;
+}
+
+.tabs-settings > *:first-child button {
+    border-radius: 3px 0 0 3px;
+}
+
+.tabs-settings > * button:hover:not(button.active) {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.tabs-settings > * button.active {
+    color: #6839A4;
+    border: 2px solid #6839A4;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.01);
+}
+
+.success-notify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 400px;
+    background: rgba(46, 224, 117, 0.2);
+    padding: 6px 40px 6px 20px;
+
+    height: 30px;
+
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.success-notify span {
+    margin-left: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.settings-crud {
+    padding: 20px 30px;
+    border-top: 3px solid #6839A4;
+}
+
+.action-settings-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    margin-bottom: -15px;
+    width: calc(100% + 30px);
+
+    border-top: 2px solid #dbdedf;
+    box-shadow: 0 -2px 2px 1px rgba(0, 0, 0, 0.02);
+}
+
+.form-actions-buttons {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.form-actions-buttons button {
+    border-radius: 3px;
+}
+
+.form-actions-buttons .action {
+    grid-area: action;
+
+    border: none;
+    background: #582c92;
+
+    height: 30px;
+    padding: 0 14px;
+
+    color: #FFF;
+    font-size: 14px;
+}
+
+.form-actions-buttons .action.delete {
+    grid-area: delete;
+    background: #C64A4A;
+}
+
+.form-actions-buttons .action.delete:hover {
+    background: #c75454;
+}
+
+.form-actions-buttons .action:hover {
+    background: #64389e;
+}
+
+.form-actions-buttons button[type="submit"] {
+    grid-area: submit;
+
+    border: none;
+    background: #7D53B2;
+
+    height: 30px;
+    padding: 0 35px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-actions-buttons button[type="submit"]:hover {
+    background: #7946b8;
+}
+
+.form-actions-buttons .back {
+    grid-area: back;
+
+    border: 2px solid #f84242;
+    background: #FFF;
+
+    height: 30px;
+    padding: 0 30px;
+
+    color: #f84242;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-actions-buttons .back:hover {
+    background: #f84242;
+    color: #FFF;
+}
+
+@media (max-width: 1000px) {
+    .container-settings {
+        padding: 0 50px 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-settings {
+        padding: 0 30px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container-settings {
+        padding: 0 15px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-settings {
+        padding: 0 5px 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    .tabs-settings {
+        flex-direction: column;
+    }
+
+    .tabs-settings > *:last-child button {
+        border-radius: 0 0 3px 3px;
+    }
+    
+    .tabs-settings > *:first-child button {
+        border-radius: 3px 3px 0 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .container-settings {
+        padding: 0 0 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-settings {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+/* @media (max-width: 500px) {
+    .container-settings {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+} */
+
+@media (max-width: 410px) {
+    .container-settings {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .form-actions-buttons {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "submit submit submit submit"
+            "nada delete action back";
+    }
+
+    .form-actions-buttons button[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    form.users-form, form.form-profiles, form.form-department, form.form-funcs {
+        width: 100%;
+        margin: 0;
+    }
+}

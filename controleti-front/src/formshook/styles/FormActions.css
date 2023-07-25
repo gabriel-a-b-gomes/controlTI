@@ -1,0 +1,134 @@
+/* FORM ACTIONS STYLES */
+
+.form-control-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-actions-buttons-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-actions-buttons-item .action {
+    border-radius: 3px;
+    border: none;
+    background: rgb(150, 17, 119);
+
+    height: 34px;
+    padding: 0 16px;
+
+    color: #FFF;
+    font-size: 16px;
+
+    margin-right: 10px;
+
+    grid-area: action;
+}
+
+.form-actions-buttons-item .action.delete {
+    background: #C64A4A;
+
+    grid-area: delete;
+}
+
+.form-actions-buttons-item .action.delete:hover {
+    background: #c75454;
+}
+
+.form-actions-buttons-item .action:hover {
+    background: rgb(171, 14, 134);
+}
+
+.form-actions-buttons-item button[type="submit"] {
+    border-radius: 3px;
+    border: none;
+    background: #59057B;
+
+    height: 34px;
+    padding: 0 50px;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+
+    grid-area: submit
+}
+
+.form-actions-buttons-item button[type="submit"]:hover {
+    background: #7708a3;
+}
+
+.form-actions-buttons-item button.back {
+    border-radius: 3px;
+    border: 2px solid #ef1b1b;
+    background: none;
+
+    height: 34px;
+    padding: 0 42px;
+
+    color: #ef1b1b;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-left: 10px;
+
+    grid-area: back;
+}
+
+.form-actions-buttons-item button.back:hover {
+    background: #ef1b1b;
+    color: #FFF;
+}
+
+@media (max-width: 550px) {
+    .form-actions-buttons-item.create {
+        width: 100%;
+        display: grid;
+
+        grid-template-areas: 
+            "submit submit"
+            "action back";
+        grid-template-columns: 30% 68%;
+        grid-template-rows: auto auto;
+
+        gap: 10px;
+    }
+
+    .form-actions-buttons-item.create button {
+        margin: 0;
+    }
+
+    .form-actions-buttons-item.create button, .form-actions-buttons-item.create .back {
+        width: 100%;
+    }
+
+    .form-actions-buttons-item.edit {
+        width: 100%;
+        display: grid;
+
+        grid-template-areas: 
+            "submit submit submit"
+            "action delete back";
+        grid-template-columns: 20% 20% 56% ;
+        grid-template-rows: auto auto;
+
+        gap: 10px;
+    }
+
+    .form-actions-buttons-item.edit button {
+        margin: 0;
+    }
+
+    .form-actions-buttons-item.edit button, .form-actions-buttons-item.edit .back {
+        width: 100%;
+    }
+
+    .form-control-buttons {
+        width: 100%;
+    }
+}

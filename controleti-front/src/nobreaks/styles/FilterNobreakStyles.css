@@ -1,0 +1,62 @@
+.filter-extra-container.nobreak .filter-fields {
+    grid-template-columns: 150px 100px 100px auto auto auto;
+}
+
+.filter-extra-container.nobreak .filter-buttons button.filter {
+    background: #ff3f34;
+}
+
+@media (max-width: 1380px) {
+    .filter-extra-container.nobreak {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.nobreak .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.nobreak .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1230px) {
+    .filter-extra-container.nobreak .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1050px) {
+    .filter-extra-container.nobreak .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .filter-extra-container.nobreak .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .filter-extra-container.nobreak .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .filter-extra-container.nobreak .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .filter-extra-container.nobreak .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}

@@ -1,0 +1,60 @@
+button.computer-chart-modal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: none;
+    background: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button.computer-chart-modal:hover {
+    opacity: 0.8;
+}
+
+.custom-tooltip {
+    max-width: 300px;
+    padding: 5px;
+
+    background: #FFF;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+    border-radius: 3px;
+}
+
+.custom-tooltip p {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-tooltip p.label {
+    font-weight: bold;
+}
+
+.custom-tooltip p.info {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 8px;
+}
+
+.custom-tooltip p.desc {
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    button.computer-chart-modal {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    button.computer-chart-modal {
+        font-size: 12px;
+        text-align: left;
+    }
+}

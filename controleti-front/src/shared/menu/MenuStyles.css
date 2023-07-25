@@ -1,0 +1,277 @@
+.navbar {
+    background: #744AAA;
+
+    padding: 8px 20px;
+    display: flex;
+}
+
+.navbar-brand {
+    background: #6839A4;
+    padding: 15px 80px 15px 20px;
+    margin-bottom: -20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF !important;
+
+    cursor: pointer;
+}
+
+
+.navbar-brand span {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #FFF;
+    background: #6b3da7;
+}
+
+.nav-link-custom {
+    margin-right: 10px;
+    border: none;
+    background: #885AC3;
+    padding: 10px 15px !important;
+
+    color: #FFF !important;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    margin-bottom: -15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link-custom:hover {
+    background: #9467ce;
+}
+
+.nav-link-custom span {
+    margin-left: 10px;
+}
+
+.navbar-options {
+    background-color: #000;
+}
+
+.dropmenu {
+    margin-top: 20px !important;
+    z-index: 100000 !important;
+
+    border-radius: 0 0 3px 3px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.01);
+}
+
+.dropmenu.devices-menu {
+    min-width: 190px;
+}
+
+.dropmenu .dropdown-item {
+    margin: 0 !important;
+    background: #FFF !important;
+    color: #000 !important;
+}
+
+.dropmenu .dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.user-area-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #FFF;
+
+    max-width: 30%;
+    width: fit-content;
+}
+
+.user-area-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-area-nav button {
+    border: none;
+    background: #FFF;
+
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+@media (max-width: 991.5px) {
+    .navbar {
+        padding: 20px 20px 8px !important;
+    }
+
+    .navbar .container-fluid {
+        padding: 0 12px !important;
+    }
+
+    .collapse {
+        margin-top: 30px !important;
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100% !important;
+    }
+
+    .nav-link-custom {
+        width: 100% !important;
+        margin-bottom: 0;
+    }
+
+    .dropmenu {
+        margin-top: 0 !important;
+        background: #9E70D9;
+        width: 100%;
+    }
+
+    .dropmenu .dropdown-item {
+        background: #9E70D9 !important;
+        color: #FFF !important;
+    }
+
+    .dropmenu .dropdown-item:hover {
+        background: #7e59ae !important;
+    }
+
+    .user-area-nav {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+
+        margin: 10px 0;
+    }
+
+    .user-area-nav a {
+        display: flex !important;
+    }
+    .user-area-nav a span {
+        display: block !important;
+    }
+
+    .user-area-nav button span {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .user-area-nav a span {
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 1300px) {
+    .user-area-nav a span {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .user-area-nav a span {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .user-area-nav a span {
+        width: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .user-area-nav a span {
+        width: fit-content;
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .user-area-nav button span {
+        display: none;
+    }
+}
+
+@media (max-width: 1070px) {
+    .user-area-nav a {
+        display: none;
+    }
+
+    .navbar {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .navbar {
+        padding: 8px 5px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .navbar {
+        padding: 8px 2px;
+    }
+
+    .navbar .container-fluid {
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .user-area-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.dummy-div {
+    width: 5px;
+    height: 5px;
+}

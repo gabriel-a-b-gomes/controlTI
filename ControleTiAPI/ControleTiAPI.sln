@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleTiAPI", "ControleTiAPI.csproj", "{987B9004-AE3A-43BF-A467-E6E7B3E83F03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{987B9004-AE3A-43BF-A467-E6E7B3E83F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987B9004-AE3A-43BF-A467-E6E7B3E83F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987B9004-AE3A-43BF-A467-E6E7B3E83F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987B9004-AE3A-43BF-A467-E6E7B3E83F03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8599477B-3F11-48CF-BDED-7A3F5B722916}
+	EndGlobalSection
+EndGlobal

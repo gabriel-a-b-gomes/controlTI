@@ -1,0 +1,119 @@
+.filter-extra-container.employee .filter-fields {
+    grid-template-columns: 100px 150px 150px 190px 200px auto;
+}
+
+.filter-extra-container.employee .filter-buttons button.filter {
+    background: #885AC3;
+}
+
+.filter-extra-container.account .filter-fields {
+    grid-template-columns: 100px 180px 250px 200px 200px;
+}
+
+.filter-extra-container.account .filter-buttons.skype button.filter {
+    background: #00aff0;
+}
+
+.filter-extra-container.account .filter-buttons.vpn button.filter {
+    background: #b1250e;
+}
+
+@media (max-width: 1390px) {
+    .filter-extra-container.employee {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.employee .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.employee .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1270px) {
+    .filter-extra-container.employee .filter-fields {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .filter-extra-container.employee .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .filter-extra-container.employee .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 730px) {
+    .filter-extra-container.employee .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .filter-extra-container.employee .filter-fields {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .filter-extra-container.employee .filter-fields .field-from-to .date-field-container {
+        width: 70px;
+    }
+}
+
+/* ACCOUNT */
+
+@media (max-width: 1250px) {
+    .filter-extra-container.account {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-extra-container.account .filter-fields .field-from-to .text-box-container {
+        width: 100%;
+    }
+
+    .filter-extra-container.account .filter-buttons {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1140px) {
+    .filter-extra-container.account .filter-fields {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .filter-extra-container.account .filter-fields {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .filter-extra-container.account .filter-fields {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .filter-extra-container.account .filter-fields {
+        grid-template-columns: auto;
+    }
+}

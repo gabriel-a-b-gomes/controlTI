@@ -1,0 +1,289 @@
+.box-container.server .box-main {
+    border-color: #1F598E;
+}
+
+.box-container.server .box-main .box-area .title {
+    text-transform: uppercase;
+}
+
+.box-container.server .box-details {
+    background: #2465a2;
+    color: #fff;
+}
+
+.box-container.server .box-main .indicator.enable {
+    background: #1F598E;
+}
+
+.box-container.server .box-info span button, .box-container.server .box-details span button {
+    background: none;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.box-container.server .box-details span button {
+    color: #FFF;
+}
+
+.box-container.server .box-main .indicator.disable {
+    background: #000;
+}
+
+.box-container.server .box-main .box-area {
+    grid-template-columns: 22% 15% 60% 3%;
+}
+
+.box-container.server .box-main .box-area .box-all-general-info {
+    grid-template-columns: 40% 30% 30%;
+}
+
+.vm-list-container {
+    padding: 3px 0 0 0;
+}
+
+.vm-list-container .vm-list-toggle {
+    border: none;
+    border-radius: 3px;
+    background: #1F598E;
+
+    width: 100%;
+
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.vm-list-container .vm-list-toggle:hover {
+    background: #1a4a77;
+}
+
+.vm-list-container .vm-list-toggle span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vm-list-container .vm-list-toggle span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vm-list-container ul {
+    width: 100%;
+
+    margin-left: 14px;
+    padding: 8px 14px 0 10px;
+
+    border-left: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.box-container.vm .box-main {
+    border-color: #7770A1;
+}
+
+.box-container.vm .box-main .indicator.enable {
+    background: #7770A1;
+}
+
+.box-container.vm .box-info span button {
+    background: none;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.box-container.vm .box-main .box-area .box-all-general-info .box-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-container.vm .box-main { 
+    height: fit-content;
+}
+
+.box-container.vm .box-main .box-area .title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box-container.vm .box-main .box-area .box-column span:last-child {
+    font-weight: 600;
+}
+
+.box-container.vm .box-main .box-area {
+    grid-template-columns: 20% 22.5% 55% 2.5%;
+}
+
+.box-container.vm .box-main .box-area .box-all-general-info {
+    grid-template-columns: 50% 25% 25%;
+}
+
+.box-container.vm .expand {
+    opacity: 0.8;
+}
+
+@media (max-width: 1270px) {
+    .box-container.vm .box-main .box-area .box-all-general-info .box-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+
+@media (max-width: 1220px) {
+    .box-container.server .box-main {
+        height: 100px;
+    }
+
+    .box-container.server .box-main .box-area .title {
+        grid-area: title;
+    }
+
+    .box-container.server .box-main .box-area .box-column {
+        grid-area: bcolumn;
+    }
+
+    .box-container.server .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general;
+    }
+
+    .box-container.server .expand {
+        grid-area: expand;
+    }
+
+    .box-container.server .box-main .box-area {
+        grid-template-columns: auto 55% 3%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title bcolumn expand"
+            "general general general";
+    }
+
+    .box-container.vm .box-main {
+        height: 100px;
+    }
+
+    .box-container.vm .box-main .box-area .title {
+        grid-area: title-vm;
+    }
+
+    .box-container.vm .box-main .box-area .box-column {
+        grid-area: bcolumn-vm;
+    }
+
+    .box-container.vm .box-main .box-area .box-all-general-info {
+        padding-top: 5px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+
+        grid-area: general-vm;
+    }
+
+    .box-container.vm .expand {
+        grid-area: expand-vm;
+    }
+
+    .box-container.vm .box-main .box-area {
+        grid-template-columns: auto 55% 3%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title-vm bcolumn-vm expand-vm"
+            "general-vm general-vm general-vm";
+    }
+}
+
+@media (max-width: 1000px) {
+    .box-container.server .box-main .box-area {
+        grid-template-columns: auto 47% 5%;
+    }
+
+    .box-container.server .box-details {
+        grid-template-columns: 35% 35% 35%;
+        padding: 5px 20px;
+    }
+
+    .box-container.server .box-details .box-topic {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 850px) {
+    .box-container.server .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+
+    .box-container.server .box-main {
+        height: 180px;
+    }
+
+    .box-container.server .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 750px) {
+    .box-container.server .box-details {
+        grid-template-columns: 50% 50%;
+    }
+
+    .box-container.vm .box-buttons {
+        flex-direction: column;
+        width: min-content;
+    }
+
+    .box-container.vm .box-main {
+        height: 180px;
+    }
+
+    .box-container.vm .box-main .box-area .box-all-general-info {
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-container.server .box-main {
+        height: 240px;
+    }
+    
+    .box-container.server .box-main .box-area {
+        grid-template-columns: auto 54% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title title expand"
+            "bcolumn bcolumn bcolumn"
+            "general general general";
+    }
+
+    .box-container.vm .box-main {
+        height: 220px;
+    }
+    
+    .box-container.vm .box-main .box-area {
+        grid-template-columns: auto 54% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title-vm title-vm expand-vm"
+            "bcolumn-vm bcolumn-vm bcolumn-vm"
+            "general-vm general-vm general-vm";
+    }
+}
+
+@media (max-width: 500px) {
+    .box-container.server .box-details {
+        grid-template-columns: 100%;
+    }
+}
